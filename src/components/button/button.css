@@ -1,0 +1,11 @@
+
+button {
+  cursor: pointer;
+  display: block;
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 0.9375rem 1.625rem;
+  border-radius: 0.625rem;
+  background: var(--bg_sec);
+  color: var(--text_white);
+}
