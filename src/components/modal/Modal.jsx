@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { MdClose } from 'react-icons/md'
 import { BsChevronRight } from 'react-icons/bs'
 import ReactDOM from 'react-dom'
@@ -15,11 +15,17 @@ const Modal = () => {
   const {modalState, setModalState} = useContext(ModalContext)
   
   
-  if (modalState.setBodyPosition) {
-    body.style.position = 'fixed'
-  } else {
-    body.style.position = 'static'
-  }
+  
+
+  useEffect(() => {
+    if (modalState.setBodyPosition) {
+      body.style.position = 'fixed'
+    } else {
+      body.style.position = 'static'
+    }
+  
+  }, [modalState])
+  
 
   const handleModal = () => {
     setModalState({
@@ -30,7 +36,7 @@ const Modal = () => {
   }
   
   const closeModal = e => {
-    const aside = document.querySelector("aside")
+    const aside = document.querySelector("#aside")
     if (!aside.contains(e.target)) {
       setModalState({
         ...modalState,

@@ -46,9 +46,14 @@ main h3 {
 }
 
 .community-left button {
+  cursor: pointer;
   background: var(--hero_bg);
   color:  #A02279;
   border-radius: 0.5rem;
+  font-size: 1rem;
+  display: block;
+  font-family: inherit;
+  padding: 0.9375rem 1.625rem;
 }
 
 .community-left {
