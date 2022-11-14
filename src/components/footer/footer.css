@@ -1,0 +1,146 @@
+footer {
+  background: var(--bg_footer);
+  color: var(--text_light);
+}
+
+footer h5 {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  margin-bottom: 1.4375rem;
+}
+
+footer h5>svg {
+  display: none;
+}
+
+.footer_control ul>li {
+  cursor: pointer;
+}
+
+.footer_control ul>li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.copyright {
+  color: #F7F7F7;
+  padding: 2.1875rem 7.46875rem 2.3125rem;
+}
+
+.footer_control {
+  display: flex;
+  column-gap: 11.6875rem;
+  justify-content: space-between;
+  padding: 3.625rem 7.0625rem 0;
+}
+
+.footer__left {
+  flex-basis: 25%;
+}
+
+.footer__logo {
+  margin-bottom: 6rem;
+}
+
+.socials {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.socials>* {
+  cursor: pointer;
+}
+
+.footer__right {
+  display: flex;
+  column-gap: 13.5625rem;
+  flex-basis: 100%;
+}
+
+
+@media screen and (max-width: 969px) {
+  .footer_control {
+    flex-direction: column;
+    row-gap: 5.125rem;
+    justify-content: space-between;
+    padding: 3.625rem var(--padding-container-md) 0;
+  }
+  .footer__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__right {
+    /* flex-direction: column; */
+    /* align-items: center; */
+    text-align: center;
+    justify-content: space-between;
+    row-gap: 2rem;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+  }
+  .footer__right>* {
+    flex-basis: 25%;
+  }
+  .footer__right>*:last-child {
+    margin: 0 auto;
+  }
+
+  .footer__logo {
+    margin-bottom: 3rem;
+  }
+
+  .copyright {
+    padding: 2.1875rem var(--padding-container-md) 2.3125rem;
+  }
+  
+}
+
+@media screen and (max-width: 580px) {
+  .footer_control {
+    padding: 3.625rem var(--padding-container-sm) 0;
+  }
+  .footer__right {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    row-gap: 2rem;
+  }
+
+  .footer__right>ul {
+    overflow: hidden;
+  }
+
+  footer h5 {
+    cursor: pointer;
+    line-height: 1rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  footer h5>svg {
+    display: inline-block;
+    font-size: 1rem;
+    transition: all 350ms;
+  }
+
+  .footer_control ul>li:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer__logo {
+    margin-bottom: 2rem;
+  }
+
+  .copyright {
+    padding: 2.1875rem var(--padding-container-sm) 2.3125rem;
+  }
+  
+}
+
+
+
