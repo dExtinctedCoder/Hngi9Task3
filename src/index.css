@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;700&family=Sora:wght@600&display=swap');
+
+:root {
+  /* colors */
+  --hero_bg: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+  --bg_sec: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+  --section_bg: #FFFFFF;
+  --bg_footer: #1D1D1E;
+  --text_white: #FFFFFF;
+  --text_black: #000000;
+  --text_darkgrey: #434343;
+  --text_light: #F1F3F9;
+  --text_modalgrey: #333333;
+  --placeholder: #B8B8B8;
+  --input_bg: rgba(247, 247, 247, 0.1);
+
+  /* spacing */
+  --padding-container-lg: 6.25rem;
+  --padding-container-md: calc(6.25rem / 2);
+  --padding-container-sm: calc(6.25rem / 4);
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'red rose', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: var(--section_bg);
+  color: var(--text_darkgrey);
+  position: static;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.page__control {
+  position: relative;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline;
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+input {
+  display: inline-block;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+::placeholder {
+  font-size: 0.875rem;
+  color: var(--placeholder);
+}
