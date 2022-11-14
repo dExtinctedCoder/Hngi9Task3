@@ -32,6 +32,41 @@ const Footer = () => {
         <div className="footer__right">
           <ul>
             <h5 id='first' onClick={e => toggleList(e)} >Community <BsChevronDown style={{transform: listState.first ? "rotate(180deg)" : "rotate(0deg)"}} /></h5>
+            <li>NFTs</li>
+            <li>Tokens</li>
+            <li>Landlords</li>
+            <li>Discord</li>
+            {
+              listState.first && <>
+              </>
+            }
+          </ul>
+          <ul>
+            <h5 id='second' onClick={e => toggleList(e)} >Places <BsChevronDown style={{transform: listState.second ? "rotate(180deg)" : "rotate(0deg)"}} /></h5>
+            <li>Castle</li>
+            <li>Farms</li>
+            <li>Beach</li>
+            <li>Learn more</li>
+            {
+              listState.second && <>
+              </>
+            }
+          </ul>
+          <ul>
+            <h5 id='third' onClick={e => toggleList(e)} >About us <BsChevronDown style={{transform: listState.third ? "rotate(180deg)" : "rotate(0deg)"}}  /></h5>
+            <li>Roadmap</li>
+            <li>Creators</li>
+            <li>Career</li>
+            <li>Contact us</li>
+            {
+              listState.third && <>
+              </>
+            }
+          </ul>
+        </div>
+        <div className="footer__right-mobile">
+          <ul>
+            <h5 id='first' onClick={e => toggleList(e)} >Community <BsChevronDown style={{transform: listState.first ? "rotate(180deg)" : "rotate(0deg)"}} /></h5>
             {
               listState.first && <>
                 <li>NFTs</li>
