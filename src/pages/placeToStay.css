@@ -1,0 +1,32 @@
+.filter-box {
+  padding: 0 var(--padding-container-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 4.0625rem;
+  margin-top: 7.1875rem;
+}
+
+.filter-box ul {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  column-gap: 3rem;
+  justify-content: space-between;
+}
+
+.filter-box>div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--hero_bg);
+  border-radius: 0.5rem;
+  border: 1px solid #B4B4B4;
+  padding: calc(0.875rem / 2) 0.8125rem;
+  color: var(--text_modalgrey);
+  width: 10.625rem;
+}
+
+
+
+
