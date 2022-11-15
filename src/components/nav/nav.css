@@ -100,11 +100,28 @@ nav ul {
 
 }
 
-@media screen and (max-width: 969px) {
+@media screen and (max-width: 580px) {
   .header__control {
     padding: 0 var(--padding-container-sm);
   }
   .header__control img {
     max-width: 185px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .header__control {
+    gap: 1rem;
+  }
+  
+  .header__control>*:last-child {
+    flex-basis: 30%;
+  }
+
+  .header__control img {
+    max-width: 150px;
+  }
+  .header__control button {
+    padding: 0.75rem 1rem;
   }
 }
