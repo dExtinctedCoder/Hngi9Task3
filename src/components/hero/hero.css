@@ -98,6 +98,10 @@ form.hero__form {
     row-gap: 3rem;
     margin: 7.8125rem 0 4.1875rem;
   }
+  
+  .hero__left h5 {
+    text-align: right;
+  }
 }
 
 @media screen and (max-width: 580px) {
