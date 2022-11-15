@@ -1,13 +1,10 @@
 import React from 'react'
-import Nav from '../components/nav/Nav'
 import Nfts from '../components/nfts/Nfts'
-import Footer from '../components/footer/Footer'
 import './placeToStay.css'
 
 const place_to_stay = () => {
   return (
     <>
-      <Nav />
       <div className="filter-box">
         <ul>
           <li>Resturant</li>
@@ -38,7 +35,6 @@ const place_to_stay = () => {
       <main>
         <Nfts minItemsNo={0} maxItemsNo={16}/>
       </main>
-      <Footer />
     </>
   )
 }

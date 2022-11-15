@@ -1,19 +1,15 @@
 import React from 'react'
 import './home.css'
-import Nav from '../components/nav/Nav'
 import Hero from '../components/hero/Hero'
-import Footer from '../components/footer/Footer'
 import MbToken from '../assets/media/Group 59537.svg'
 import MetaMask from '../assets/media/Group 4040.svg'
 import OpenSea from '../assets/media/Frame 4041.svg'
-import Button from '../components/button/Button'
 import Frame from '../assets/media/Frame 59546.png'
 import Nfts from '../components/nfts/Nfts'
 
 const home = () => {
   return (
     <>
-      <Nav />
       <Hero />
       <div className="ecosystem">
         <div><img src={MbToken} /></div>
@@ -34,7 +30,6 @@ const home = () => {
           <img src={Frame} alt="" />
         </div>
       </section>
-      <Footer />
     </>
   )
 }
