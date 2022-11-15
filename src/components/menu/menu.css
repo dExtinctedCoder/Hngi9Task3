@@ -1,5 +1,5 @@
 aside#menuBar {
-  position: absolute;
+  position: fixed;
   height: 100vh;
   top: 0;
   left: 0;
@@ -11,6 +11,8 @@ aside#menuBar {
 
 .menu__control {
   height: 100%;
+  position: absolute;
+  inset: 0;
 }
 
 .menu__control nav>ul {
