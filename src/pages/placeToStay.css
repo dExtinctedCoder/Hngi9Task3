@@ -28,5 +28,19 @@
 }
 
 
+@media screen and (max-width: 969px) {
+  .filter-box {
+    padding: 0 var(--padding-container-md);
+  }
+}
 
+@media screen and (max-width: 580px) {
+  .filter-box ul {
+    display: none;
+  }
+  .filter-box {
+    padding: 0 var(--padding-container-sm);
+    margin-top: 3rem;
+  }
+}
 
